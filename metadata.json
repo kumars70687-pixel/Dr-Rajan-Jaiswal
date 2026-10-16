@@ -1,0 +1,8 @@
+{
+  "name": "Dr. Rajan Jaiswal - Clinic in Sector 77, Noida",
+  "description": "Official website for Dr. Rajan Jaiswal (डॉ राजन जायसवाल) at Elite Mart, Sector 77, Noida. Patient-first healthcare consultations, appointment enquiries, and clinic directions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,142 @@
+@import "tailwindcss";
+
+@layer base {
+  :root,
+  [data-theme="sage"] {
+    --theme-bg-main: #f8f7f4;
+    --theme-bg-surface: #ffffff;
+    --theme-bg-subtle: #f0eee9;
+    --theme-bg-accent-subtle: #e8f3ee;
+    --theme-border: #e3dfd7;
+    --theme-border-subtle: #eeece6;
+    --theme-text-main: #18221f;
+    --theme-text-muted: #54655f;
+    --theme-primary: #123e32;
+    --theme-primary-hover: #0c2b23;
+    --theme-primary-text: #ffffff;
+    --theme-accent: #1e7a5c;
+    --theme-accent-light: #d8eee4;
+    --theme-badge-bg: #e5f4ec;
+    --theme-badge-text: #125740;
+    --theme-hero-tint-1: rgba(220, 240, 230, 0.7);
+    --theme-hero-tint-2: rgba(240, 237, 230, 0.7);
+    --theme-nav-bg: rgba(248, 247, 244, 0.95);
+  }
+
+  [data-theme="sapphire"] {
+    --theme-bg-main: #f3f6fa;
+    --theme-bg-surface: #ffffff;
+    --theme-bg-subtle: #e8eef6;
+    --theme-bg-accent-subtle: #e2effa;
+    --theme-border: #d4e0ee;
+    --theme-border-subtle: #e6eef7;
+    --theme-text-main: #0c1c2e;
+    --theme-text-muted: #485c75;
+    --theme-primary: #0a2540;
+    --theme-primary-hover: #06192d;
+    --theme-primary-text: #ffffff;
+    --theme-accent: #0f6ab4;
+    --theme-accent-light: #d6eaf8;
+    --theme-badge-bg: #e1f0fc;
+    --theme-badge-text: #084b83;
+    --theme-hero-tint-1: rgba(215, 235, 250, 0.7);
+    --theme-hero-tint-2: rgba(230, 238, 248, 0.7);
+    --theme-nav-bg: rgba(243, 246, 250, 0.95);
+  }
+
+  [data-theme="champagne"] {
+    --theme-bg-main: #faf8f5;
+    --theme-bg-surface: #ffffff;
+    --theme-bg-subtle: #f3eee7;
+    --theme-bg-accent-subtle: #f7f1e6;
+    --theme-border: #e6dfd3;
+    --theme-border-subtle: #f0ebe1;
+    --theme-text-main: #1c1917;
+    --theme-text-muted: #61584f;
+    --theme-primary: #192231;
+    --theme-primary-hover: #0e141f;
+    --theme-primary-text: #ffffff;
+    --theme-accent: #a3732b;
+    --theme-accent-light: #faecd5;
+    --theme-badge-bg: #faeedb;
+    --theme-badge-text: #785016;
+    --theme-hero-tint-1: rgba(250, 238, 218, 0.7);
+    --theme-hero-tint-2: rgba(242, 238, 230, 0.7);
+    --theme-nav-bg: rgba(250, 248, 245, 0.95);
+  }
+
+  [data-theme="nocturne"] {
+    --theme-bg-main: #0b1120;
+    --theme-bg-surface: #111a2e;
+    --theme-bg-subtle: #17233d;
+    --theme-bg-accent-subtle: #142a38;
+    --theme-border: #223454;
+    --theme-border-subtle: #1c2b46;
+    --theme-text-main: #f1f5f9;
+    --theme-text-muted: #94a3b8;
+    --theme-primary: #10b981;
+    --theme-primary-hover: #059669;
+    --theme-primary-text: #051b14;
+    --theme-accent: #14b8a6;
+    --theme-accent-light: #163836;
+    --theme-badge-bg: #133334;
+    --theme-badge-text: #2dd4bf;
+    --theme-hero-tint-1: rgba(16, 185, 129, 0.15);
+    --theme-hero-tint-2: rgba(20, 184, 166, 0.12);
+    --theme-nav-bg: rgba(11, 17, 32, 0.95);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--theme-bg-main);
+  color: var(--theme-text-main);
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* Custom utility styles matching the active theme */
+.theme-bg-main {
+  background-color: var(--theme-bg-main);
+}
+.theme-bg-surface {
+  background-color: var(--theme-bg-surface);
+}
+.theme-bg-subtle {
+  background-color: var(--theme-bg-subtle);
+}
+.theme-bg-accent-subtle {
+  background-color: var(--theme-bg-accent-subtle);
+}
+.theme-border {
+  border-color: var(--theme-border);
+}
+.theme-border-subtle {
+  border-color: var(--theme-border-subtle);
+}
+.theme-text-main {
+  color: var(--theme-text-main);
+}
+.theme-text-muted {
+  color: var(--theme-text-muted);
+}
+.theme-primary-bg {
+  background-color: var(--theme-primary);
+  color: var(--theme-primary-text);
+}
+.theme-primary-bg:hover {
+  background-color: var(--theme-primary-hover);
+}
+.theme-accent-text {
+  color: var(--theme-accent);
+}
+.theme-accent-bg {
+  background-color: var(--theme-accent);
+}
+.theme-badge {
+  background-color: var(--theme-badge-bg);
+  color: var(--theme-badge-text);
+}
